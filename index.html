@@ -1,144 +1,589 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sarika | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">Sarika</a>
-        <div>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <p>Hello , i am</p>
-        <h1>Sarika</h1>
-        <h2>Bsc Computer Science Student</h2>
-        <p>
-          I am learning Software development and building projects with modern
-          Wed technologies
-        </p>
-        <a href="#projects"> View My Projects</a>
-        <a href="#contact">Contact Me</a>
-      </section>
-      <section id="#about">
-        <h2>About Me</h2>
-        <p>
-          I am a Computer Science Student interested in Software Development,
-          Backend Development , Full-stack Development and AI
-        </p>
-</section>
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <h3>Java</h3>
-            <p>Core Java and backend development fundamentals.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>HTML & CSS</h3>
-            <p>Responsive layouts and modern web interfaces.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>DOM manipulation and interactive web experiences.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Git & GitHub</h3>
-            <p>Version control and project collaboration.</p>
-        </div>
-
-    </div>
-
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-
-        <article class="project-card">
-
-            <div class="project-content">
-
-                <p class="project-number">01</p>
-
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    A responsive portfolio website built with
-                    HTML, CSS and JavaScript.
-                </p>
-
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <article class="project-card">
-
-            <div class="project-content">
-
-                <p class="project-number">02</p>
-
-                <h3>To-Do List App</h3>
-
-                <p>
-                    A task management application with
-                    localStorage persistence.
-                </p>
-
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>DOM</span>
-                    <span>localStorage</span>
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <form>
-
-    <label for="name">Name</label>
-    <input
-        type="text"
-        id="name"
-        name="name"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Sarika's personal portfolio website showcasing skills, projects, and contact information."
     >
 
-</form>
-      </section>
+    <title>Sarika | Computer Science Student</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                Sonu
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                ☰
+            </button>
+
+            <div
+                class="nav-links"
+                id="primary-navigation"
+            >
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section
+            id="home"
+            class="hero section"
+        >
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    Hello, I'm
+                </p>
+
+                <h1>
+                    Sonu
+                </h1>
+
+                <h2>
+                    Computer Science Student
+                </h2>
+
+                <p class="hero-description">
+                    I am learning to build modern,
+                    responsive and user-friendly web
+                    applications while developing my
+                    skills in software engineering.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="btn btn-primary"
+                    >
+                        View My Projects
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary"
+                    >
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section
+            id="about"
+            class="section"
+        >
+
+            <div class="container">
+
+                <p class="section-label">
+                    About Me
+                </p>
+
+                <h2 class="section-title">
+                    A little about me
+                </h2>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+
+                        <p>
+                            I am a Computer Science student
+                            interested in software development
+                            and full-stack engineering.
+                        </p>
+
+                        <p>
+                            I am currently building my
+                            foundation in Java, JavaScript,
+                            web development, databases and
+                            software engineering tools.
+                        </p>
+
+                        <p>
+                            My goal is to continuously learn,
+                            build practical projects and
+                            become an industry-ready software
+                            developer.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section
+            id="skills"
+            class="section section-alt"
+        >
+
+            <div class="container">
+
+                <p class="section-label">
+                    Skills
+                </p>
+
+                <h2 class="section-title">
+                    Technologies I'm learning
+                </h2>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+
+                        <span class="skill-icon">
+                            HTML
+                        </span>
+
+                        <h3>
+                            HTML5
+                        </h3>
+
+                        <p>
+                            Semantic structure and
+                            accessible web pages.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <span class="skill-icon">
+                            CSS
+                        </span>
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+                        <p>
+                            Responsive layouts,
+                            animations and modern styling.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <span class="skill-icon">
+                            JS
+                        </span>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            DOM manipulation,
+                            events and interactive interfaces.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <span class="skill-icon">
+                            JAVA
+                        </span>
+
+                        <h3>
+                            Java
+                        </h3>
+
+                        <p>
+                            Core programming and
+                            object-oriented development.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <span class="skill-icon">
+                            SQL
+                        </span>
+
+                        <h3>
+                            SQL
+                        </h3>
+
+                        <p>
+                            Learning relational databases
+                            and querying data.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <span class="skill-icon">
+                            GIT
+                        </span>
+
+                        <h3>
+                            Git & GitHub
+                        </h3>
+
+                        <p>
+                            Version control and
+                            project collaboration.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section
+            id="projects"
+            class="section"
+        >
+
+            <div class="container">
+
+                <p class="section-label">
+                    Projects
+                </p>
+
+                <h2 class="section-title">
+                    Things I'm building
+                </h2>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Personal Portfolio Website
+                        </h3>
+
+                        <p>
+                            A responsive portfolio website
+                            created using HTML, CSS and
+                            JavaScript.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                            aria-label="Personal Portfolio Website project"
+                        >
+                            Current Project →
+                        </a>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h3>
+                            To-Do List App
+                        </h3>
+
+                        <p>
+                            A task management application
+                            using JavaScript and browser
+                            localStorage.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <span class="project-link muted-link">
+                            Coming Soon →
+                        </span>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <h3>
+                            REST API
+                        </h3>
+
+                        <p>
+                            A REST API built using Node.js
+                            and Express for managing
+                            application records.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>REST</span>
+
+                        </div>
+
+                        <span class="project-link muted-link">
+                            Coming Soon →
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section
+            id="contact"
+            class="section section-alt"
+        >
+
+            <div class="container contact-container">
+
+                <div class="contact-intro">
+
+                    <p class="section-label">
+                        Contact
+                    </p>
+
+                    <h2 class="section-title">
+                        Let's connect
+                    </h2>
+
+                    <p>
+                        Have a question, opportunity or
+                        simply want to connect?
+                        Send me a message.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="contact-form"
+                    class="contact-form"
+                    novalidate
+                >
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Your message"
+                            required
+                        ></textarea>
+
+                        <small
+                            id="character-count"
+                            class="character-count"
+                        >
+                            0 / 500
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary form-submit"
+                    >
+                        Send Message
+                    </button>
+
+
+                    <p
+                        id="form-message"
+                        class="form-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer>
-      <p>copyright Sarika. All rights reserved</p>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                ©
+                <span id="current-year"></span>
+                Sonu. All rights reserved.
+            </p>
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
+
     </footer>
-  </body>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
